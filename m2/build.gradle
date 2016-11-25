@@ -1,7 +1,11 @@
+apply plugin: 'java'
+configurations {
+    one
+}
 sourceSets {
-    config_one {
+    one {
         java {
-            srcDir 'src/config_one/java'
+            srcDir 'src/one/java'
         }
     }
 }

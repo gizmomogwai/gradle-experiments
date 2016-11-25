@@ -1,0 +1,6 @@
+
+
+dependencies {
+  compile project(path: ':m1', configuration: 'config_one')
+  compile project(path: ':m2', configuration: 'config_one')
+}

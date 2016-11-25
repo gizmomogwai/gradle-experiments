@@ -1,0 +1,7 @@
+sourceSets {
+    config_one {
+        java {
+            srcDir 'src/config_one/java'
+        }
+    }
+}

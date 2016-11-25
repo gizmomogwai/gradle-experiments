@@ -9,3 +9,11 @@ sourceSets {
         }
     }
 }
+
+task oneJar(type: Jar) {
+    from sourceSets.one.output
+}
+
+artifacts {
+    one oneJar
+}

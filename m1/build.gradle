@@ -19,6 +19,7 @@ sourceSets {
 
 task oneJar(type: Jar) {
     from sourceSets.one.output
+    appendix 'one'
 }
 
 artifacts {

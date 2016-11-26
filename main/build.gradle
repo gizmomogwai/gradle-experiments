@@ -4,3 +4,9 @@ dependencies {
     compile project(path: ':m1', configuration: 'one')
     compile project(path: ':m2', configuration: 'one')
 }
+
+task run(type: JavaExec, dependsOn: classes) {
+    main = 'Main'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}

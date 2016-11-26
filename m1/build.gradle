@@ -2,9 +2,16 @@ apply plugin: 'java'
 configurations {
     one
 }
+
 sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+    }
     one {
         java {
+            srcDir 'src/main/java'
             srcDir 'src/one/java'
         }
     }

@@ -12,14 +12,19 @@ sourceSets {
     }
     one {
         java {
-            srcDir 'src/main/java'
             srcDir 'src/one/java'
         }
     }
 }
 
+dependencies {
+    oneCompile project(':m1')
+}
+
 task oneJar(type: Jar) {
+    from sourceSets.main.output
     from sourceSets.one.output
+
     appendix 'one'
 }
 
